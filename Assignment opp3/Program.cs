@@ -18,7 +18,19 @@
 
             #endregion
 
-           
+            #region q D-e-f
+            DeliveryAddress address = new DeliveryAddress("SUEZ", "Nile Street", 10);
+
+            StandardShipment standard = new StandardShipment("SH001", "Laptop", 3, 80, address);
+            ExpressShipment express = new ExpressShipment("SH002", "Mobile Phone", 2, 60, address, 30);
+            InternationalShipment international = new InternationalShipment("SH003", "Television", 8, 120, address, "Spain", 100);
+
+
+            #endregion
+
+            
+
+
 
 
 
