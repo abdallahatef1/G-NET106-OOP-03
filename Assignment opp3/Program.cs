@@ -8,9 +8,16 @@
             #region qA
             Driver driver = new Driver("Abdallah atef");
             #endregion
+            #region qB
+            DeliveryCenter center = new DeliveryCenter("Suez");
 
-          
-            
+            #endregion
+
+           
+
+
+
+
 
 
 
