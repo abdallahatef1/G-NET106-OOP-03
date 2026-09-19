@@ -13,7 +13,13 @@
 
             #endregion
 
+            #region qC
+            center.Driver = driver;
+
+            #endregion
+
            
+
 
 
 
