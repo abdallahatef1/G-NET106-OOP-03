@@ -60,6 +60,22 @@
 
             #endregion
 
+            #region qJ
+            Console.WriteLine();
+            Console.WriteLine("Updating Weight...");
+            Console.WriteLine();
+            Console.WriteLine($"Original Weight : {standard.Weight} KG");
+
+            standard.UpdateWeight(5);                 // version 1
+            Console.WriteLine($"Updated Weight : {standard.Weight} KG");
+
+            standard.UpdateWeight(5, 0.5m);           // version 2 (5 + 0.5 packing)
+            Console.WriteLine($"Updated Weight After Packing : {standard.Weight} KG");
+            Console.WriteLine();
+            Console.WriteLine("==========================================");
+
+            #endregion
+
 
 
 
