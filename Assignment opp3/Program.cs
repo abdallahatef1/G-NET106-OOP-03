@@ -75,12 +75,54 @@
             Console.WriteLine("==========================================");
 
             #endregion 
+
             #region qK
             Console.WriteLine();
             Console.WriteLine("Printing Using Shipment[]...");
             Console.WriteLine();
+            Shipment[] shipments = { standard, express, international };
+            foreach (Shipment s in shipments)
+            {
+                s.PrintShipment();        
+                Console.WriteLine();
+            }
+            Console.WriteLine("==========================================");
 
             #endregion
+
+            #region q 1 sealed 
+            Console.WriteLine();
+            Console.WriteLine("Sealed Class & Sealed Method...");
+            Console.WriteLine();
+
+
+
+            #endregion
+
+            #region sealed class 
+            CompletedShipment completed = new CompletedShipment("SH004", "Keyboard", 1, 40, address);
+            completed.PrintShipment();
+            Console.WriteLine();
+            #endregion
+
+            #region sealed method
+            InternationalShipment priority = new PriorityInternationalShipment("SH005", "Camera", 2, 150, address, "France", 80);
+            priority.GenerateCustomsReport();     // runs the Priority version (dynamic binding)
+            Console.WriteLine();
+            international.GenerateCustomsReport();
+            #endregion
+
+            #region ☐  l. Demonstrate the sealed class and sealed method (comments).
+            // These lines will NOT compile 
+            // CompletedShipment completed2 = new CompletedShipment("SH006", "Mouse", 1, 30, address); // Cannot inherit from sealed class
+            // priority.GenerateCustomsReport(); // Cannot override sealed method
+
+
+
+            #endregion
+
+
+
 
 
 
