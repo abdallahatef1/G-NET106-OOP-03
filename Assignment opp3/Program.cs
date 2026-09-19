@@ -74,6 +74,12 @@
             Console.WriteLine();
             Console.WriteLine("==========================================");
 
+            #endregion 
+            #region qK
+            Console.WriteLine();
+            Console.WriteLine("Printing Using Shipment[]...");
+            Console.WriteLine();
+
             #endregion
 
 
