@@ -28,7 +28,12 @@
 
             #endregion
 
-            
+            #region qG
+            center.AddShipment(standard);
+            center.AddShipment(express);
+            center.AddShipment(international);
+
+            #endregion
 
 
 
