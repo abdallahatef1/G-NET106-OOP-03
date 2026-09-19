@@ -40,6 +40,28 @@
 
             #endregion
 
+            #region qI
+            Console.WriteLine();
+            Console.WriteLine("Printing Using DeliveryHelper...");
+            Console.WriteLine();
+
+            DeliveryHelper.PrintShipmentDetails(standard);
+            Console.WriteLine("Standard Shipment Printed Successfully.");
+            Console.WriteLine();
+
+            DeliveryHelper.PrintShipmentDetails(express);
+            Console.WriteLine("Express Shipment Printed Successfully.");
+            Console.WriteLine();
+
+            DeliveryHelper.PrintShipmentDetails(international);
+            Console.WriteLine("International Shipment Printed Successfully.");
+            Console.WriteLine();
+            Console.WriteLine("==========================================");
+
+            #endregion
+
+
+
 
 
 
